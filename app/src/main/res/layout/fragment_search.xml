@@ -1,0 +1,42 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.thefreelancer.youni.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      >
+
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/searchList"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+
+
+
+
+
+       </android.support.v7.widget.RecyclerView>
+
+       <TextView
+           android:id="@+id/searchHint"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Search from over 10,000 courses on youtube"
+           android:fontFamily="sans-serif-condensed"
+           android:textSize="25sp"
+           android:layout_centerInParent="true"
+           android:gravity="center"
+           />
+
+
+
+
+   </RelativeLayout>
+
+</FrameLayout>

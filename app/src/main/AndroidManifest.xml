@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.thefreelancer.youni">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.thefreelancer.youni.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.thefreelancer.youni.MainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="sensor"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_AC"
+                android:value=".Courses" />
+        </activity>
+        <activity
+            android:name="com.thefreelancer.youni.Courses"
+            android:label="@string/title_activity_courses"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.thefreelancer.youni.Signup"
+            android:label="@string/title_activity_signup"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.thefreelancer.youni.Signin"
+            android:label="Youni"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.thefreelancer.youni.CourseSpecs"
+            android:label="@string/title_activity_course_specs"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.thefreelancer.youni.Courses"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thefreelancer.youni.Courses" />
+        </activity>
+        <activity
+            android:name="com.thefreelancer.youni.Profile"
+            android:label="@string/title_activity_profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thefreelancer.youni.Courses" />
+        </activity>
+        <activity
+            android:name="com.thefreelancer.youni.EditProfile"
+            android:label="@string/title_activity_edit_profile"
+            android:parentActivityName="com.thefreelancer.youni.Courses"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thefreelancer.youni.Courses" />
+        </activity>
+        <activity
+            android:name="com.thefreelancer.youni.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:parentActivityName="com.thefreelancer.youni.Courses"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thefreelancer.youni.Courses" />
+        </activity>
+        <activity
+            android:name="com.thefreelancer.youni.Forgotpassword"
+            android:label="@string/title_activity_forgotpassword"
+            android:parentActivityName="com.thefreelancer.youni.Signin"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.thefreelancer.youni.Signin" />
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider1723899047830922"
+            android:exported="true" />
+
+        <activity
+            android:name="com.thefreelancer.youni.FlashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.thefreelancer.youni.ImageSlider"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
+    </application>
+
+</manifest>

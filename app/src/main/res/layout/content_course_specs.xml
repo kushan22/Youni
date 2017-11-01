@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thefreelancer.youni.CourseSpecs"
+    tools:showIn="@layout/activity_course_specs">
+
+
+
+
+    <Button
+        android:id="@+id/join"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Join"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:background="@drawable/mybutton"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/unjoin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="UnJoin"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/mybutton"
+        android:textColor="#fff"
+        />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="You have already completed this course. If you have not got the certificate yet visit your resume and click on the link provided to get certificate"
+        android:visibility="invisible"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Complete this course to earn PAYTM cash"
+        android:gravity="center"
+        android:layout_below="@+id/unjoin"
+        android:layout_marginTop="20dp"
+        android:padding="5dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        />
+
+
+
+
+</RelativeLayout>

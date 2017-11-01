@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Course Has Been Completed. Check your Resume for Certi Verification"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="5dp"/>
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Go To Resume"
+        android:id="@+id/goToResume"
+        android:background="#212121"
+        android:fontFamily="sans-serif-condensed"
+        android:textColor="#fff"/>
+
+</LinearLayout>

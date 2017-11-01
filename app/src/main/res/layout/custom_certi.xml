@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout1"
+        android:weightSum="2">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Save "
+            android:id="@+id/saveToGallery"
+            android:textColor="#fff"
+            android:background="@drawable/mybutton"
+            android:layout_gravity="center"/>
+
+        <View
+
+            android:layout_width="2dp"
+            android:layout_height="1dp"
+
+            />
+        <Button
+            android:id="@+id/gotoLink"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:text="Go to Link"
+            android:textColor="#fff"
+            android:background="@drawable/mybutton"/>
+
+    </LinearLayout>
+
+
+
+    <ImageView
+        android:id="@+id/certiImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:src="@drawable/video_placeholder"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/certiImage"
+        android:text="Share on Facebook"
+        android:id="@+id/shareonfacebook"
+        android:textColor="#fff"
+        android:background="@drawable/mybutton"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>

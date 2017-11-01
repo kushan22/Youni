@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="fill_vertical"
+    android:id="@+id/userLogin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+<RelativeLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.thefreelancer.youni.Signin"
+    tools:showIn="@layout/activity_signin">
+    
+    
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp">
+        
+        <EditText
+            android:id="@+id/editTextUser"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Email"
+            android:inputType="textEmailAddress"
+            android:fontFamily="sans-serif-condensed"
+            />
+        
+        
+        
+        
+        
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/textLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textLayout1"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/editTextPass"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:fontFamily="sans-serif-condensed"
+            />
+
+
+
+
+
+    </android.support.design.widget.TextInputLayout>
+    
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonSignIn"
+        android:layout_below="@+id/textLayout2"
+        android:layout_marginTop= "40dp"
+        android:text="Sign in"
+        android:background="@drawable/mybutton"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-condensed"
+        />
+
+    
+    
+
+</RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
